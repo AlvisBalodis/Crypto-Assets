@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Crypto assets</title>
+</head>
+<body>
+<ul id="navigation">
+    {% for asset in assets %}
+        <li>{{ asset.getName }} ({{ asset.getSymbol }}) – ${{ asset.getPrice }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
